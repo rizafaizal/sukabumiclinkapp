@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="id.go.sukabumikota.clink.ui.berita.DetailBeritaActivity"
+    tools:showIn="@layout/activity_detail_berita">
+
+    <LinearLayout
+        android:id="@+id/ln_beritadetail_1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_judul_berita_detail"
+                android:text="@string/menu_education"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_icon1"
+                    android:src="@drawable/icon_berita"
+                    android:layout_centerVertical="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_icon1"
+                    android:layout_toRightOf="@id/img_icon1">
+
+                    <TextView
+                        android:id="@+id/tv_tag_berita_detail"
+                        style="@style/TextAppearance.AppCompat.Subhead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        tools:text="Nasional, Sukabumi, Kerajinan" />
+
+                    <TextView
+                        android:id="@+id/tv_date_berita_detail"
+                        style="@style/TextAppearance.AppCompat.Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primaryTextColor"
+                        android:textSize="12sp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        tools:text="19/11/2020 08:00:56" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_isi_berita_detail"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:textSize="18sp"
+            android:textColor="@color/primaryTextColor_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Bagian yang akan digunakan untuk isi" />
+
+        <include layout="@layout/layout_foto_detail_vertical" />
+
+        <LinearLayout
+            android:id="@+id/ln_contact_satgas_detail"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_back_berita_detail"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textColor="@color/colorAccent"
+                android:text="Kembali"
+                android:textAllCaps="false"
+                android:layout_gravity="right"
+                android:background="@drawable/button_bg_transparent"
+                android:drawableStart="@drawable/ic_chevron_left_accent_24dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

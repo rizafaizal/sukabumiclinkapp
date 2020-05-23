@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="id.go.sukabumikota.clink.ui.education.DetailEducationActivity"
+    tools:showIn="@layout/activity_detail_education">
+
+    <LinearLayout
+        android:id="@+id/ln_educationdetail_1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_jenis_recyclerzone_detail"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/menu_education"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/color2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_judul_education_detail"
+                android:text="@string/menu_education"
+                style="@style/TextAppearance.AppCompat.Headline"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:maxLines="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <View style="@style/Divider"/>
+
+        <TextView
+            android:id="@+id/tv_isi_education_detail"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:textSize="18sp"
+            android:textColor="@color/primaryTextColor_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Bagian yang akan digunakan untuk isi" />
+
+        <View style="@style/Divider"/>
+
+        <TextView
+            android:text="Ilustrasi Foto :"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/color2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/include_education_detail"
+                layout="@layout/layout_foto_detail"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_education_fotodetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:elevation="3dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintCircleRadius="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/include_education_detail"
+                app:layout_constraintHorizontal_bias="0.957"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_fullscreen_50" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

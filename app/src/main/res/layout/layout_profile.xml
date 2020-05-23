@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semiWhiteTextColor"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="28dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="15dp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/icon_profile"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Nama"
+                        style="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/primaryTextColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tv_nama_profile"
+                        android:text="Jhon Lenon"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <View style="@style/Divider"/>
+
+                    <TextView
+                        android:text="Username"
+                        android:textColor="@color/primaryTextColor"
+                        style="@style/TextAppearance.AppCompat.Subhead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tv_username_profile"
+                        android:text="Username"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <View style="@style/Divider"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_editItem_profile"
+            android:layout_margin="15dp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/icon_profile"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:gravity="center_vertical"
+                        style="@style/parent">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_nama_profile"
+                            android:hint="Nama"
+                            android:maxLines="1"
+                            android:inputType="text"
+                            style="@style/modifiedEditText_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        style="@style/parent">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_username_profile"
+                            android:hint="Username"
+                            android:maxLines="1"
+                            android:inputType="text"
+                            style="@style/modifiedEditText_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="8dp"
+                        android:visibility="gone"
+                        android:gravity="center_vertical"
+                        style="@style/parent">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_password_profile"
+                            android:hint="Password"
+                            android:maxLines="1"
+                            android:inputType="text"
+                            style="@style/modifiedEditText_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="8dp"
+                        app:passwordToggleEnabled="true"
+                        android:gravity="center_vertical"
+                        style="@style/parent">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_newpassword_profile"
+                            android:hint="Password baru"
+                            android:maxLines="1"
+                            android:inputType="textPassword"
+                            style="@style/modifiedEditText_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="8dp"
+                        app:passwordToggleEnabled="true"
+                        android:gravity="center_vertical"
+                        style="@style/parent">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_repeatpassword_profile"
+                            android:hint="Ulangi Password"
+                            android:maxLines="1"
+                            android:inputType="textPassword"
+                            style="@style/modifiedEditText_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="right"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/btn_batal_profile"
+                            style="@style/loginButton_2"
+                            android:layout_width="85dp"
+                            android:layout_height="50dp"
+                            android:layout_marginRight="15dp"
+                            android:text="Batal"
+                            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+                        <Button
+                            android:id="@+id/btn_ubah_profile"
+                            style="@style/loginButton"
+                            android:layout_width="85dp"
+                            android:layout_height="50dp"
+                            android:text="Ubah"
+                            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="15dp"
+            android:background="@color/cardColor"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/icon_address"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Kecamatan"
+                        style="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/primaryTextColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tv_kecamatan_profile"
+                        android:text="Kecamatan"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <View style="@style/Divider"/>
+
+                    <TextView
+                        android:text="Kelurahan"
+                        android:textColor="@color/primaryTextColor"
+                        style="@style/TextAppearance.AppCompat.Subhead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tv_kelurahan_profile"
+                        android:text="Kelurahan"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <View style="@style/Divider"/>
+
+                    <TextView
+                        android:text="RW"
+                        android:textColor="@color/primaryTextColor"
+                        style="@style/TextAppearance.AppCompat.Subhead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tv_rw_profile"
+                        android:text="RW"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <View style="@style/Divider"/>
+
+                    <TextView
+                        android:text="RT"
+                        android:textColor="@color/primaryTextColor"
+                        style="@style/TextAppearance.AppCompat.Subhead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tv_rt_profile"
+                        android:text="Kelurahan"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <View style="@style/Divider"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

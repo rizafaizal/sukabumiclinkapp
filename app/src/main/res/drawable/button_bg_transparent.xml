@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item>-->
+<!--        <shape android:shape="rectangle" >-->
+<!--            &lt;!&ndash;apply button background transparent, full opacity&ndash;&gt;-->
+<!--            <solid android:color="#00ffffff"/>-->
+<!--            &lt;!&ndash;make button border solid color, nontransparent&ndash;&gt;-->
+<!--            <stroke android:color="@color/colorAccent"-->
+<!--                android:width="2dp"/>-->
+<!--            <corners android:radius="27dp"/>-->
+<!--        </shape>-->
+<!--    </item>-->
+    <item android:state_pressed="true" android:drawable="@drawable/button_bg_transparent_pressed"/>
+    <item android:state_focused="true" android:drawable="@drawable/button_bg_transparent_pressed"/>
+    <item android:drawable="@drawable/button_bg_transparent_normal"/>
+</selector>

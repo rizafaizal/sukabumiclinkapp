@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.formkelolasampah.AddKelolaSampahActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@drawable/bg_gradient_green"
+        app:elevation="5dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_add_kelola"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/bg_gradient_green"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@color/semiWhiteTextColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_kelola_1e"
+                android:layout_margin="15dp"
+                android:background="@color/cardColor"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:padding="8dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="12dp"
+                            android:src="@drawable/icon_creative"/>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                style="@style/TextAppearance.AppCompat.Headline"
+                                android:text="@string/menu_creative"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                style="@style/TextAppearance.AppCompat.Subhead"
+                                android:text="Kelurahan"
+                                android:textSize="13sp"
+                                android:textColor="@color/primaryTextColor"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/tv_add_namakelurahan_kelola"
+                                style="@style/TextAppearance.AppCompat.Headline"
+                                android:text="Cimahi"
+                                android:textColor="@color/primaryTextColor"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/Divider"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Subhead"
+                            android:text="Jenis Kerajinan"
+                            android:textSize="15sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spnr_jenissouvenir_kelola"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:gravity="center_vertical"
+                            style="@style/parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_add_namaorganisasi_kelola"
+                                android:hint="Nama Organisasi"
+                                android:maxLines="1"
+                                android:inputType="text"
+                                style="@style/modifiedEditText_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            style="@style/parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_add_keterangan_kelola"
+                                android:hint="Keterangan"
+                                android:maxLines="3"
+                                android:inputType="text"
+                                style="@style/modifiedEditText_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            style="@style/parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_add_penjawab_kelola"
+                                android:hint="Penanggung Jawab"
+                                android:maxLines="1"
+                                android:inputType="text"
+                                style="@style/modifiedEditText_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            style="@style/parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_add_alamat_kelola"
+                                android:hint="Alamat Lengkap"
+                                android:maxLines="1"
+                                android:inputType="text"
+                                style="@style/modifiedEditText_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            style="@style/parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_add_telpon_kelola"
+                                android:hint="Telepon"
+                                android:maxLines="1"
+                                android:inputType="number"
+                                style="@style/modifiedEditText_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            style="@style/parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_add_email_kelola"
+                                android:hint="Email"
+                                android:maxLines="1"
+                                android:inputType="textEmailAddress"
+                                style="@style/modifiedEditText_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            style="@style/parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_add_rw_kelola"
+                                android:hint="RW"
+                                android:maxLines="1"
+                                android:inputType="number"
+                                style="@style/modifiedEditText_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            style="@style/parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_add_rt_kelola"
+                                android:hint="RT"
+                                android:maxLines="1"
+                                android:inputType="number"
+                                style="@style/modifiedEditText_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            android:visibility="gone"
+                            style="@style/parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_add_idkelurahan_kelola"
+                                android:hint="ID Kelurahan"
+                                android:maxLines="1"
+                                android:inputType="text"
+                                style="@style/modifiedEditText_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            android:visibility="gone"
+                            style="@style/parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_add_idsouvenir_kelola"
+                                android:hint="ID Souvenir"
+                                android:maxLines="1"
+                                android:inputType="text"
+                                style="@style/modifiedEditText_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:id="@+id/btn_add_latlon_kelola"
+                                    style="@style/Widget.AppCompat.Button.Colored"
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cari Lokasi"
+                                    android:layout_marginTop="25dp"
+                                    android:layout_marginRight="17dp"
+                                    android:maxLines="2"
+                                    android:src="@drawable/ic_phone_accent_24dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="center_vertical"
+                                    style="@style/parent">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edt_add_latitude_kelola"
+                                        android:hint="Latitude"
+                                        android:maxLines="1"
+                                        android:inputType="text"
+                                        style="@style/modifiedEditText_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_marginTop="8dp"
+                                    android:gravity="center_vertical"
+                                    style="@style/parent">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/edt_add_longitude_kelola"
+                                        android:hint="Longitude"
+                                        android:maxLines="1"
+                                        android:inputType="text"
+                                        style="@style/modifiedEditText_2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_vertical"
+                            android:visibility="gone"
+                            style="@style/parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_add_useradd_kelola"
+                                android:hint="User Add"
+                                android:maxLines="1"
+                                android:inputType="text"
+                                style="@style/modifiedEditText_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_kelola_2e"
+                android:layout_below="@id/cv_kelola_1e"
+                android:layout_margin="15dp"
+                android:background="@color/cardColor"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ln_kelola3"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Subhead"
+                            android:text="Tambahkan foto:"
+                            android:textSize="15sp"
+                            android:textColor="@color/primaryTextColor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_kelola4"
+                        android:layout_below="@id/ln_kelola3"
+                        android:orientation="horizontal"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img_1_add_kelola"
+                            android:background="@drawable/bg_img_plus"
+                            android:layout_marginRight="5dp"
+                            android:scaleType="centerCrop"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"/>
+
+                        <ImageView
+                            android:id="@+id/img_2_add_kelola"
+                            android:background="@drawable/bg_img_plus"
+                            android:layout_marginRight="5dp"
+                            android:scaleType="centerCrop"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"/>
+
+                        <ImageView
+                            android:id="@+id/img_3_add_kelola"
+                            android:background="@drawable/bg_img_plus"
+                            android:scaleType="centerCrop"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/cv_kelola_3e"
+                android:layout_below="@id/cv_kelola_2e"
+                android:gravity="right"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <Button
+                    android:id="@+id/btn_add_back_kelola"
+                    style="@style/loginButton_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Kembali" />
+
+                <Button
+                    android:id="@+id/btn_add_submit_kelola"
+                    style="@style/loginButton"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Tambah" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

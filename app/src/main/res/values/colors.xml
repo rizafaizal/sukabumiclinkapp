@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#008577</color>-->
+<!--    <color name="colorPrimaryDark">#00574B</color>-->
+<!--    <color name="colorAccent">#D81B60</color>-->
+    <color name="colorPrimary">#3CA348</color>
+    <color name="colorPrimaryDark">#329545</color>
+    <color name="colorAccent">#41B548</color>
+
+    <color name="color1">#329545</color>
+    <color name="color2">#3CA348</color>
+    <color name="color3">#CDDC39</color>
+    <color name="color4">#41B548</color>
+    <color name="color5">#8ED938</color>
+    <color name="color6">#46B02E</color>
+    <color name="color7">#20C65A</color>
+
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="semiWhiteTextColor">#F2F2F2</color>
+    <color name="primaryTextColor">#388E3C</color>
+    <color name="primaryTextColor_black">#575757</color>
+    <color name="loginBkColor">#f0f0f0</color>
+    <color name="textcardColor_graydark">#3f3f3f</color>
+
+    <!--colros for card-->
+    <color name="whiteCardColor">#fff</color>
+    <color name="cardColor">#ffffff</color>
+
+    <!--Color Bot Nav-->
+    <color name="colorNavigationIcon">#dae9f6</color>
+    <color name="colorNavigationText">#ffffff</color>
+</resources>

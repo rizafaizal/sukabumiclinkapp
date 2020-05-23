@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Sukabumi Clink</string>
+
+    <string name="logins">LOGIN</string>
+    <string name="login_username_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_signup_hint">Login hanya untuk Kelurahan</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Refresh</string>
+
+    <string name="menu_home">Beranda</string>
+    <string name="menu_recycler_zone">Recycler Zone</string>
+    <string name="menu_creative">Creative Craft</string>
+    <string name="menu_education">Edukasi</string>
+    <string name="menu_satgas">Satgas</string>
+    <string name="menu_banksampah">Bank Sampah</string>
+    <string name="menu_berita">Berita</string>
+    <string name="menu_boulevard">Boulevard</string>
+    <string name="menu_formkelolasampah">Kelola Sampah</string>
+    <string name="menu_addkelolasampah">Tambah Kerajinan</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_login">Login</string>
+    <string name="rczone_organik">Organik</string>
+    <string name="rczone_anorganik">Anorganik</string>
+    <string name="header_name">Jhon Smith</string>
+
+    <string-array name="array_status_kelola">
+        <item>Aktif</item>
+        <item>Tidak Aktif</item>
+    </string-array>
+    <string name="title_activity_bank_sampah">Bank Sampah</string>
+
+</resources>

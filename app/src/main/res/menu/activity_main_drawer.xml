@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_recycler_zone"
+            android:icon="@drawable/icon_trash"
+            android:title="@string/menu_recycler_zone" />
+        <item
+            android:id="@+id/nav_creative"
+            android:icon="@drawable/ic_creative_black_24dp"
+            android:title="@string/menu_creative" />
+        <item
+            android:id="@+id/nav_education"
+            android:icon="@drawable/ic_education_black_24dp"
+            android:title="@string/menu_education" />
+        <item
+            android:id="@+id/nav_satgas"
+            android:icon="@drawable/ic_satgas2_black_24dp"
+            android:title="@string/menu_satgas" />
+        <item
+            android:id="@+id/nav_banksampah"
+            android:icon="@drawable/ic_banksampah_black_24dp"
+            android:title="@string/menu_banksampah" />
+        <item
+            android:id="@+id/nav_berita"
+            android:icon="@drawable/ic_satgas_black_24dp"
+            android:title="@string/menu_berita" />
+        <item
+            android:id="@+id/nav_boulevard"
+            android:icon="@drawable/icon_boulevard"
+            android:title="@string/menu_boulevard" />
+        <item
+            android:id="@+id/nav_formkelolasampah"
+            android:icon="@drawable/ic_kelola_black_24dp"
+            android:title="@string/menu_formkelolasampah" />
+    </group>
+
+    <item android:title="Pengaturan">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_profile_black_24dp"
+                android:title="@string/menu_profile" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logouts_24dp"
+                android:title="@string/menu_logout" />
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_logout_black_24dp"
+                android:title="@string/menu_login" />
+        </menu>
+    </item>
+
+</menu>
